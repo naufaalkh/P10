@@ -12,3 +12,6 @@ class Node {
     }
 }:
 
+class Stack {
+    
+};
