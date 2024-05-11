@@ -10,7 +10,7 @@ class Node {
     Node() {
         next = NULL;
     }
-}:
+};
 
 class Stack {
     private:
@@ -31,10 +31,8 @@ class Stack {
         return value;
     }
 
-    void pop()
-    {
-        if (isEmpty())
-        {
+    void pop() {
+        if (isEmpty()) {
             cout << "Stack is empty." << endl;
         }
 
@@ -53,6 +51,11 @@ class Stack {
                 cout << current->data << "" << endl;
                 current = current->next;
             }
-            cout << endl;
+            cout << endl; // return value of top node
+        }
+
+        bool isEmpty(){
+            return top == NULL;
         }
     }
+};
