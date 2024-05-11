@@ -99,7 +99,12 @@ int main() {
                 }
                 break;
 
-            
+            case 4:
+                cout <<"Exiting Program." << endl;
+                break;
+            deafult:
+                cout << "Invalid choice. Please try again." << endl;
+                break;
         }
     }
 }
